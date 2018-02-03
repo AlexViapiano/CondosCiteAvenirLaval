@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Generic - Spectral by HTML5 UP</title>
+		<title>Condos Cité Avenir Laval</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -21,7 +21,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1><a href="index.html">Contact</a></h1>
+						<h1><a href="index.html">Condos Cité Avenir Laval</a></h1>
 						<nav id="nav">
 							<ul>
 								<li class="special">
@@ -52,6 +52,10 @@
 
 								<p><b>Telephone:</b>  514-111-1111<br>
 								<b>Email:</b>  condo@gmail.com</p>
+
+								<div id="map_canvas" style="width:400px; height:300px;" ></div>
+								<p></p>
+								<button onclick="displayMap()">Voir la carte</button>
 
 								<hr />
 
@@ -118,6 +122,40 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+
+			<style type="text/css">
+				#map_canvas {display:none;}
+				</style>
+
+			<script>
+					function displayMap() {
+						document.getElementById('map_canvas').style.display="block";
+						initialize();
+					}
+
+					function initialize() {
+						// create the map
+						var myOptions = {
+							zoom: 13,
+							center: new google.maps.LatLng(45.599917, -73.583289),
+							mapTypeId: google.maps.MapTypeId.ROADMAP
+						}
+
+						map = new google.maps.Map(document.getElementById("map_canvas"),
+							myOptions);
+
+						var marker = new google.maps.Marker({
+							position: {lat:45.599917, lng:-73.583289},
+							map: map,
+							title: 'Condos Cité Avenir Laval'
+						});
+					}
+			</script>
+			
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-ljTOCCgZZlyDuu2xVR_pdV9QHiz2zfk&callback=myMap"
+			async defer></script>
+			
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-ljTOCCgZZlyDuu2xVR_pdV9QHiz2zfk&callback=myMap"></script>
 
 	</body>
 </html>
