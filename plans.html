@@ -13,6 +13,19 @@
 		#parent:hover #popup {
 			display: block;
 		}
+
+		@media screen and (max-width: 736px) {
+
+			.big {
+				display: none;
+			}
+
+			.small {
+				display: block !important;
+			}
+
+		}
+
 	</style>
 	<head>
 		<title>Condos Cité Avenir Laval</title>
@@ -43,7 +56,6 @@
 											<li><a href="features.html">Features</a></li>
 											<li><a href="builder.html">Builder</a></li>
 											<li><a href="contact.html">Contact</a></li>
-											<li><a href="index.html">Français</a></li>
 											<!-- <li><a href="elements.html">Elements</a></li> -->
 										</ul>
 									</div>
@@ -66,7 +78,7 @@
 								<h2 id="popup3" style="display: none; position: absolute; left: 50%; margin-left: -50px; margin-top: 50px;">Floor 3</h2>
 							</div>
 
-							<div>
+							<div class="big">
 								<img class="map" style="display: block; margin-left: auto; margin-right: auto;" src="images/plansTest.jpg" usemap="#image-map">
 
 								<map name="image-map">
@@ -76,15 +88,25 @@
 								</map>
 							</div>
 
+							<div class="small" style="display: none;">
+								<img class="map" style="display: block; margin-left: auto; margin-right: auto;" src="images/plansSmall.jpg" usemap="#image-map">
+
+								<map name="image-map">
+									<area class="level3" target="_blank" alt="level3" title="level3" href="level3.html" coords="46,113,98,98,162,107,174,104,227,110,277,112,294,108,295,86,276,80,211,69,204,69,174,61,164,71,98,57,76,66,68,63,42,83,43,105" shape="poly">
+									<area class="level2" target="_blank" alt="level2" title="level2" href="level2.html" coords="45,137,99,126,162,130,174,130,276,133,293,131,295,109,278,113,228,109,176,102,163,106,99,97,45,113,45,164,99,158,161,155,189,159,227,156,274,157,291,153,292,143,276,143,274,132,174,130,98,126" shape="poly">
+									<area class="level1" target="_blank" alt="level1" title="level1" href="level1.html" coords="" shape="poly">
+								</map>
+							</div>
+
 						</section>
 					</article>
 
 				<!-- Footer -->
-					<!-- <footer id="footer">
+				<footer id="footer" style="padding: 2em 0 0.5em 0;">
 						<ul class="copyright">
 							<li>&copy; Condos Cité Avenir Laval</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
-					</footer> -->
+					</footer>
 
 			</div>
 

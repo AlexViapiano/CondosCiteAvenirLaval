@@ -34,7 +34,6 @@
 											<li><a href="features.html">Features</a></li>
 											<li><a href="builder.html">Builder</a></li>
 											<li><a href="contact.html">Contact</a></li>
-											<li><a href="index.html">Français</a></li>
 											<!-- <li><a href="elements.html">Elements</a></li> -->
 										</ul>
 									</div>
@@ -51,17 +50,6 @@
 						<section class="wrapper style5">
 							<div class="inner">
 
-								<center>
-									<p><b>Telephone:</b>  514-111-1111<br>
-									<b>Email:</b>  condo@gmail.com</p>
-
-									<div id="map_canvas" style="width:400px; height:300px;" ></div>
-									<p></p>
-									<button onclick="displayMap()">Voir la carte</button>
-								</center>
-
-								<hr />
-
 								<section>
 									<p>Questions? We have the answers!</p>
 									<form method="post" action="https://formspree.io/condo@gmail.ca">
@@ -72,7 +60,7 @@
 											<div class="6u$ 12u$(xsmall)">
 												<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
 											</div>
-											<div class="12u$">
+											<!-- <div class="12u$">
 												<div class="select-wrapper">
 													<select name="demo-category" id="demo-category">
 														<option value="">- Category -</option>
@@ -82,7 +70,7 @@
 														<option value="1">Human Resources</option>
 													</select>
 												</div>
-											</div>
+											</div> -->
 
 											<div class="12u$">
 												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
@@ -97,16 +85,32 @@
 									</form>
 
 								</section>
+
+								<hr />
+
+								<center>
+									<p>
+										<b>Telephone:</b> 514-XXX-XXXX<br>
+										<b>Email:</b> info@m2construction.ca
+									</p>
+
+									<div id="map_canvas" style="width:400px; height:300px;" ></div>
+									<p></p>
+									<button onclick="displayMap()">See the map</button>
+								</center>
+	
+				
+
 							</div>
 						</section>
 					</article>
 
 				<!-- Footer -->
-					<!-- <footer id="footer">
+				<footer id="footer" style="padding: 2em 0 0.5em 0;">
 						<ul class="copyright">
 							<li>&copy; Condos Cité Avenir Laval</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
-					</footer> -->
+					</footer>
 
 			</div>
 
@@ -133,7 +137,7 @@
 						// create the map
 						var myOptions = {
 							zoom: 13,
-							center: new google.maps.LatLng(45.599917, -73.583289),
+							center: new google.maps.LatLng(45.625469, -73.688291),
 							mapTypeId: google.maps.MapTypeId.ROADMAP
 						}
 
@@ -141,7 +145,7 @@
 							myOptions);
 
 						var marker = new google.maps.Marker({
-							position: {lat:45.599917, lng:-73.583289},
+							position: {lat:45.625469, lng:-73.688291},
 							map: map,
 							title: 'Condos Cité Avenir Laval'
 						});
