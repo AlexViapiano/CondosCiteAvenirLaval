@@ -1476,7 +1476,8 @@
 		font-weight: 800;
 		letter-spacing: 0.225em;
 		line-height: 1em;
-		margin: 0 0 1em 0;
+		text-align: center;
+		/* margin: 0 0 1em 0; */
 		text-transform: uppercase;
 	}
 
@@ -2510,7 +2511,7 @@
 			}
 
 		.spotlight .content {
-			padding: 2em 4em 0.1em 4em ;
+			padding: 0em 4em 0em 4em ;
 			-moz-order: 2;
 			-webkit-order: 2;
 			-ms-order: 2;
@@ -2578,7 +2579,7 @@
 
 		}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 837px) {
 
 			.spotlight {
 				display: block;
@@ -2593,18 +2594,21 @@
 				}
 
 				.spotlight .content {
-					padding: 4em 3em 2em 3em ;
 					max-width: none;
 					text-align: center;
 					width: 100%;
 				}
+
+			.imageDisappear {
+				display: none !important;
+			}
 
 		}
 
 		@media screen and (max-width: 736px) {
 
 			.spotlight .content {
-				padding: 3em 2em 1em 2em ;
+				padding: 0em 2em 10px 2em ;
 			}
 
 		}
@@ -2612,7 +2616,7 @@
 /* Wrapper */
 
 	.wrapper {
-		padding: 6em 0 4em 0 ;
+		padding: 4em 0 2em 0 ;
 	}
 
 		.wrapper > .inner {
@@ -3292,7 +3296,6 @@
 					#header img {
 						height: 38px !important; 
 						max-width: 38px !important; 
-						margin-left: 3px !important; 
 						margin-top: 3px !important;
 					}
 
@@ -3319,6 +3322,16 @@
 				}
 
 					#header nav > ul > li > a {
+						border: 0;
+						color: #fff;
+						display: block;
+						font-size: 0.8em;
+						letter-spacing: 0.225em;
+						padding: 0 1.5em;
+						text-transform: uppercase;
+					}
+
+					#header nav > ul > li > div > a {
 						border: 0;
 						color: #fff;
 						display: block;
@@ -3666,7 +3679,7 @@
 		@media screen and (max-width: 1680px) {
 
 			#main > header {
-				padding: 6em 3em 6em 3em ;
+				padding: 3em 3em 2em 3em ;
 			}
 
 		}
@@ -3674,7 +3687,7 @@
 		@media screen and (max-width: 1280px) {
 
 			#main > header {
-				padding: 6em 3em 6em 3em ;
+				padding: 3em 3em 2em 3em ;
 			}
 
 		}
@@ -3682,7 +3695,7 @@
 		@media screen and (max-width: 980px) {
 
 			#main > header {
-				padding: 6em 3em 6em 3em ;
+				padding: 3em 3em 2em 3em ;
 			}
 
 		}
@@ -3690,7 +3703,7 @@
 		@media screen and (max-width: 736px) {
 
 			#main > header {
-				padding: 5em 3em 3em 3em ;
+				padding: 3em 3em 2em 3em ;
 			}
 
 				#main > header h2 {
@@ -3786,10 +3799,10 @@
 /* Landing */
 
 	body.landing #page-wrapper {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../../images/banner.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../../images/banner.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../../images/banner.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../../images/banner.jpg");
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -3807,10 +3820,10 @@
 
 	body.is-mobile.landing #banner,
 	body.is-mobile.landing .wrapper.style4 {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../../images/banner.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../../images/banner.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../../images/banner.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../../images/banner.jpg");
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;

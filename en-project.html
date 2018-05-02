@@ -9,15 +9,15 @@
         background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/banner2.jpg") !important;
     }
 
-    @media screen and (max-width: 980px) {
-        #main > header {
-            background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/bannerPlans.jpg") !important;
-            background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/bannerPlans.jpg") !important;
-            background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/bannerPlans.jpg") !important;
-            background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/bannerPlans.jpg") !important;
+    @media screen and (max-width: 480px) {
+        .displayBig {
+            display: none;
+        }
+
+        .displaySmall {
+            display: block !important;
         }
     }
-
 
     @media screen and (max-width: 980px) {
         .big {
@@ -67,12 +67,12 @@
 <div id="page-wrapper">
 
     <header id="header">
-        <img style="height: 40px; max-width: 40px; margin-left: 1em; margin-top: 4px;" src="images/logo-small.png">
+        <img style="height: 40px; max-width: 40px; margin-left:  0.75em; margin-top: 3px;" src="images/logo-small.png">
         <h1 style="padding-left: 45px;"><a href="index.html">Condos Cité Avenir Laval</a></h1>
         <nav id="nav">
             <ul>
-                <li class="alt">
-                    <a href="index.html"><span>Français</span></a>
+                <li>
+                    <div class="displayBig"><a href="index.html"><span>Français</span></a></div>
                 </li>
                 <li class="special">
                     <a href="#menu" class="menuToggle"><span>Menu</span></a>
@@ -84,7 +84,7 @@
                             <li><a href="en-features.html">Features</a></li>
                             <li><a href="en-builder.html">Builder</a></li>
                             <li><a href="en-contact.html">Contact</a></li>
-                            <!-- <li><a href="elements.html">Elements</a></li> -->
+                            <li class="displaySmall" style="display: none;"><a href="index.html"><span>Français</span></a></li>
                         </ul>
                     </div>
                 </li>
@@ -93,87 +93,58 @@
     </header>
 
     <article id="main">
-        <header>
+        <header style="background-attachment: scroll;">
             <h2>Project</h2>
         </header>
         <section class="wrapper style5">
 
-            <div style="text-align: center;" id="parent">
-                <h2>Select a floor</h2>
-                <h2 id="popup1" style="display: none; position: absolute; left: 50%; margin-left: -50px; margin-top: 50px;">Floor 1</h2>
-                <h2 id="popup2" style="display: none; position: absolute; left: 50%; margin-left: -50px; margin-top: 50px;">Floor 2</h2>
-                <h2 id="popup3" style="display: none; position: absolute; left: 50%; margin-left: -50px; margin-top: 50px;">Floor 3</h2>
+        <div class="big">
+            <center>
+                <img class="map" src="images/plansBig.jpg" usemap="#image-map">
+                <map name="image-map">
+                    <area class="level4" target="_blank" alt="level4" title="level4" href="en-level1.html" coords="278,277,278,277,461,301,494,293,579,305,599,304,647,311,663,306,788,317,837,309,838,245,786,239,790,228,690,214,692,199,618,177,608,180,593,176,585,180,586,150,516,127,471,113,423,135,426,148,404,159,406,182,387,181,410,169,316,148,291,160,276,157,218,187,193,185,118,234,125,240,125,275,118,276,119,303,126,305,125,322,278,277" shape="poly">
+                    <area class="level3" target="_blank" alt="level3" title="level3" href="en-level1.html" coords="126,385,280,363,462,375,495,370,579,376,598,374,647,381,662,377,786,382,837,373,835,312,787,318,662,307,647,309,598,303,579,305,495,292,461,301,280,276,125,323,126,341,120,343,120,370,126,371" shape="poly">
+                    <area class="level2" target="_blank" alt="level2" title="level2" href="en-level1.html" coords="126,386,126,411,120,411,120,436,126,435,127,448,282,451,460,446,495,450,580,451,647,449,663,449,786,445,833,436,836,374,785,382,664,378,646,379,599,374,579,376,495,370,461,376,276,364" shape="poly">
+                    <area class="level1" target="_blank" alt="level2" title="level2" href="en-level1.html" coords="126,449,127,487,280,512,462,498,493,504,519,504,653,517,677,515,660,503,834,494,832,435,785,444,661,449,497,450,462,446,281,451" shape="poly">
+                </map>
+            </center>
+        </div>
+
+        <div class="med" style="display: none;">
+            <center>
+                <img class="map" src="images/plansMed.jpg" usemap="#image-map">
+                <map name="image-map">
+                    <area target="_blank" alt="level4" title="level4" href="en-level1.html" coords="88,227,195,193,325,212,345,205,406,215,419,211,453,218,464,213,550,222,585,217,588,172,553,167,553,159,483,150,485,139,433,124,427,126,417,122,409,125,411,106,332,78,296,95,296,106,283,111,284,130,271,127,284,117,222,103,202,112,194,109,152,132,135,128,81,163,87,169,87,191,83,193,82,210,88,214" shape="poly">
+                    <area target="_blank" alt="level3" title="level3" href="en-level1.html" coords="88,270,195,254,323,263,347,260,405,265,421,263,453,266,464,264,549,266,586,263,584,217,550,222,465,213,453,218,420,211,405,214,346,207,323,211,196,192,88,226,88,240,81,242,81,258,88,258" shape="poly">
+                    <area target="_blank" alt="level2" title="level2" href="en-level1.html" coords="88,312,197,316,322,311,346,314,433,313,463,317,583,311,584,262,544,267,465,264,453,265,422,263,407,264,346,259,323,262,196,254,88,269,88,287,83,289,83,303,88,304,89,339,198,359,324,347,345,350,435,344,465,351,583,347,582,312,462,318,433,313,345,315,321,312,197,316" shape="poly">
+                    <area target="_blank" alt="level1" title="level1" href="en-level1.html" coords="91,338,197,361,324,345,344,352,435,343,465,351,581,346,582,312,463,317,433,312,344,314,323,310,196,315,90,312" shape="poly">
+                </map>
+            </center>
+        </div>
+
+        <div class="small" style="display: none;">
+            <div class="table-wrapper">
+                <center>
+                <table style="max-width: 600px;">
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;"><a href="level1.html">Floor 1</a></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;"><a href="level1.html">Floor 2</a></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;"><a href="level1.html">Floor 3</a></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;"><a href="level1.html">Floor 4</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                </center>
             </div>
-
-            <center>
-                <div class="big">
-                    <img class="map" style="display: block; margin-left: auto; margin-right: auto;" src="images/plansBig.jpg" usemap="#image-map">
-
-                    <map name="image-map">
-                        <area class="level4" target="_blank" alt="level4" title="level4" href="en-level1.html" coords="278,277,278,277,461,301,494,293,579,305,599,304,647,311,663,306,788,317,837,309,838,245,786,239,790,228,690,214,692,199,618,177,608,180,593,176,585,180,586,150,516,127,471,113,423,135,426,148,404,159,406,182,387,181,410,169,316,148,291,160,276,157,218,187,193,185,118,234,125,240,125,275,118,276,119,303,126,305,125,322,278,277" shape="poly">
-                        <area class="level3" target="_blank" alt="level3" title="level3" href="en-level1.html" coords="126,385,280,363,462,375,495,370,579,376,598,374,647,381,662,377,786,382,837,373,835,312,787,318,662,307,647,309,598,303,579,305,495,292,461,301,280,276,125,323,126,341,120,343,120,370,126,371" shape="poly">
-                        <area class="level2" target="_blank" alt="level2" title="level2" href="en-level1.html" coords="126,386,126,411,120,411,120,436,126,435,127,448,282,451,460,446,495,450,580,451,647,449,663,449,786,445,833,436,836,374,785,382,664,378,646,379,599,374,579,376,495,370,461,376,276,364" shape="poly">
-                        <area class="level1" target="_blank" alt="level2" title="level2" href="en-level1.html" coords="126,449,127,487,280,512,462,498,493,504,519,504,653,517,677,515,660,503,834,494,832,435,785,444,661,449,497,450,462,446,281,451" shape="poly">
-                    </map>
-                </div>
-            </center>
-
-            <center>
-                <div class="med" style="display: none;">
-                    <img class="map" style="display: block; margin-left: auto; margin-right: auto;" src="images/plansMed.jpg" usemap="#image-map">
-                    <map name="image-map">
-                        <area target="_blank" alt="level4" title="level4" href="level1.html" coords="88,227,195,193,325,212,345,205,406,215,419,211,453,218,464,213,550,222,585,217,588,172,553,167,553,159,483,150,485,139,433,124,427,126,417,122,409,125,411,106,332,78,296,95,296,106,283,111,284,130,271,127,284,117,222,103,202,112,194,109,152,132,135,128,81,163,87,169,87,191,83,193,82,210,88,214" shape="poly">
-                        <area target="_blank" alt="level3" title="level3" href="level1.html" coords="88,270,195,254,323,263,347,260,405,265,421,263,453,266,464,264,549,266,586,263,584,217,550,222,465,213,453,218,420,211,405,214,346,207,323,211,196,192,88,226,88,240,81,242,81,258,88,258" shape="poly">
-                        <area target="_blank" alt="level2" title="level2" href="level1.html" coords="88,312,197,316,322,311,346,314,433,313,463,317,583,311,584,262,544,267,465,264,453,265,422,263,407,264,346,259,323,262,196,254,88,269,88,287,83,289,83,303,88,304,89,339,198,359,324,347,345,350,435,344,465,351,583,347,582,312,462,318,433,313,345,315,321,312,197,316" shape="poly">
-                        <area target="_blank" alt="level1" title="level1" href="level1.html" coords="91,338,197,361,324,345,344,352,435,343,465,351,581,346,582,312,463,317,433,312,344,314,323,310,196,315,90,312" shape="poly">
-                    </map>
-                </div>
-            </center>
+        </div>
             
-            <div class="small" style="display: none;">
-                    <div class="table-wrapper">
-                        <center>
-                        <table style="max-width: 600px;">
-                            <tbody>
-                                <tr>
-                                    <td style="text-align: center;"><a href="level1.html">Floor 1</a></td>
-                                </tr>
-                                <tr>
-                                    <td style="text-align: center;"><a href="level1.html">Floor 2</a></td>
-                                </tr>
-                                <tr>
-                                    <td style="text-align: center;"><a href="level1.html">Floor 3</a></td>
-                                </tr>
-                                <tr>
-                                    <td style="text-align: center;"><a href="level1.html">Floor 4</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        </center>
-                    </div>
-                </div>
-            
-            <!-- 
-            <h1>A small map</h1>
-            <p>This is just a simple example of how the maps look.</p>
-            <p>
-            <img src="images/demo_simple.png" width="420" height="300" class="map" usemap="#simple">
-            <map name="simple">
-            <area href="#" shape="poly" coords="47,62,106,61,134,72,135,118,30,116" alt="Link" title="Default behavior">
-            <area href="#" shape="poly" coords="32,157,133,157,127,192,127,211,28,211" alt="Link" data-maphilight='{"strokeColor":"0000ff","strokeWidth":5,"fillColor":"ff0000","fillOpacity":0.6}' title="Metadata'd up a bit">
-            <area id="squidhead" href="#" shape="circle" coords="290,102,30" alt="Octoface" data-maphilight='{"stroke":false,"fillColor":"ff0000","fillOpacity":0.6}' title="Metadata'd up a bit">
-            <area href="#" shape="poly" coords="219,190,225,175,237,157,239,148,245,142,251,140,263,140,265,139,310,139,311,145,364,182,363,201,343,221,333,213,329,181,313,177,330,234,295,231,292,174,279,176,282,204,269,220,255,206,267,167,235,193" alt="Legs" data-maphilight='{"stroke":false,"fillColor":"000000","fillOpacity":1,"alwaysOn":true}' title="Metadata'd up a bit">
-            </map>
-            </p>
-            <p>Because it's a really common question: <a id="squidheadlink" href="#">mouse over this to trigger a hilight from an external element!</a></p>
-            <p>The code involved is very simple:</p>
-            <code><pre>$('#squidheadlink').mouseover(function(e) {
-                $('#squidhead').mouseover();
-            }).mouseout(function(e) {
-                $('#squidhead').mouseout();
-            }).click(function(e) { e.preventDefault(); });</pre></code>
-            <a href="./">Back to the index</a> -->
-
         </section>
     </article>
 
