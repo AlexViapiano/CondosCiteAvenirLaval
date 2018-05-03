@@ -8,12 +8,25 @@
 
 	<style>    	
 		@media screen and (max-width: 480px) {
+
+			.logoSmall {
+				width: 70px !important;
+			}
+
+			.logoTextSmall {
+				width: 200px !important;
+			}
+
 			.displayBig {
 				display: none;
 			}
 	
 			.displaySmall {
 				display: block !important;
+			}
+
+			.imageSmall {
+				width: 480px !important;
 			}
 		}
 
@@ -23,7 +36,7 @@
 			}
 	
 			.displaySmall2 {
-				display: block !important;;
+				display: block !important;
 			}
 		}
 	</style>
@@ -38,7 +51,7 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<link rel="icon" href="images/logo-small.png">
 	</head>
-	<body class="landing">
+	<body class="landing" style="overflow-x: hidden;">
 
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
@@ -71,30 +84,19 @@
 					</header>
 
 				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
-							<!-- <h2>Condos Cité Avenir Laval</h2> -->
-							<img style="height: auto; width: 140px; display: block; margin-left: auto; margin-right: auto;" src="images/logoIcon.png">
-							<img style="height: auto; width: 400px; display: block; margin-left: auto; margin-right: auto;" src="images/logoText.png">
-						</div>
-						<a href="#one" class="more scrolly">Learn More</a>
-					</section>
+				<section id="banner">
+					<div class="inner">
+						<!-- <h2>Condos Cité Avenir Laval</h2> -->
+						<img class="logoSmall" style="height: auto; width: 140px; display: block; margin-left: auto; margin-right: auto;" src="images/logoIcon.png">
+						<img class="logoTextSmall" style="height: auto; width: 400px; display: block; margin-left: auto; margin-right: auto;" src="images/logoText.png">
+					</div>
+					<a href="#one" class="more scrolly">Learn More</a>
+				</section>
 
-				<!-- One -->
-					<!-- <section id="one" class="wrapper style1 special" style="padding: 3em 3em 1em 3em;">
-						<div class="inner">
-							<header class="major" style="margin-bottom: 30px;">
-								<h3 style="text-transform: none; font-weight: 600; border-color: rgba(255, 255, 255, 0);">Condos Cité Avenir Laval offers affordable condominiums in the heart of Downtown Laval, just steps from Metro Montmorency, Autoroutes 440 and 15</h3>
-								<h4 style="text-transform: none; font-weight: 500; border-color: rgba(255, 255, 255, 1);">One, two, or three  bedroom units are available.</h4>
-								<a href="en-contact.html" style="width: 250px; margin-left: auto; margin-right: auto; margin-bottom: 0px; margin-top: 25px;" class="button fit special">Contact</a>
-							</header>
-						</div>
-					</section> -->
 
-				<!-- Two -->
-				<div class="displayBig2">
-					<section id="two" class="wrapper alt style2">
-
+				<!-- Body when screen is 836px + -->
+				<section id="two" class="wrapper alt style2">
+					<div class="displayBig2">
 						<section class="spotlight" style="background-color: #4591c5">
 							<div class="image">
 								<img class="imageDisappear" src="images/banner.jpg" alt="" />
@@ -113,65 +115,8 @@
 								<a href="en-contact.html" style="width: 250px; margin-left: auto; margin-right: auto; margin-top: 25px;" class="button fit special">Contact</a>
 							</div>
 						</section>
-						
-					</section>
-				<div>
+					<div>
 
-				<div class="displaySmall2" style="display: none;">
-					<section id="one" class="wrapper style1 special" style="padding: 3em 3em 1em 3em;">
-						<div class="inner">
-							<header class="major" style="margin-bottom: 30px;">
-								<h3 style="text-transform: none; font-weight: 600; border-color: rgba(255, 255, 255, 0);">Condos Cité Avenir Laval offers affordable condominiums in the heart of Downtown Laval, just steps from Metro Montmorency, Autoroutes 440 and 15</h3>
-								<h4 style="text-transform: none; font-weight: 500; border-color: rgba(255, 255, 255, 1);">One, two, or three  bedroom units are available.</h4>
-								<a href="en-contact.html" style="width: 250px; margin-left: auto; margin-right: auto; margin-bottom: 0px; margin-top: 25px;" class="button fit special">Contact</a>
-							</header>
-						</div>
-					</section>
-				<div>
-
-				<!-- Three -->
-					<!-- <section id="three" class="wrapper style3 special">
-						<div class="inner">
-							<header class="major">
-								<h2>Accumsan mus tortor nunc aliquet</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
-							</header>
-							<ul class="features">
-								<li class="icon fa-building">
-									<h3>Ac Augue Eget</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-wheelchair">
-									<h3>Mus Scelerisque</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-users">
-									<h3>Mauris Imperdiet</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-								<li class="icon fa-phone">
-									<h3>Tortor Ut</h3>
-									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
-								</li>
-							</ul>
-						</div>
-					</section> -->
-
-					<!-- <section>
-						<div class="inner">
-							<header>
-								<h2>Arcue ut vel commodo</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
-							</header>
-							<ul class="actions vertical">
-								<li><a href="en-contact.html" class="button fit special">Contact</a></li>
-								<li><a href="en-project.html" class="button fit">Project</a></li>
-							</ul>
-						</div> 
-					</section> -->
-
-				<!-- Footer -->
 					<footer id="footer" style="padding: 2em 0 0.5em 0;">
 						<ul class="copyright">
 							<li>&copy; Condos Cité Avenir Laval</li>
@@ -180,7 +125,37 @@
 							<a href="http://facebook.com" style="font-size: 2.6em; padding-left: 7px;" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 						</ul>
 					</footer>
+				</section>
 
+				
+				
+				<!-- Body when screen is less then -->
+				<div class="displaySmall2" style="display: none;">
+					<section style="background-color: #4591c5">
+						<div style="padding: 20px 10px 20px 10px">
+							<h4 class="paddingRequire">Condos Cité Avenir Laval offers affordable condominiums in the heart of Downtown Laval, just steps from Metro Montmorency, Autoroutes 440 and 15</h4>
+						</div>
+					</section>
+
+					<section style="background-color: #87c45d;">
+						<div>
+							<img class="imageSmall" style="width: 836px; height: auto;" src="images/banner2.jpg" alt="" />
+						</div>
+						<div style="padding: 20px 10px 20px 10px">
+							<h4>just steps from Metro Montmorency, Autoroutes 440 and 15. One, two, or three  bedroom units are available.</h4>
+							<a href="en-contact.html" style="width: 250px; margin-left: auto; margin-right: auto; margin-top: 25px;" class="button fit special">Contact</a>
+						</div>
+					</section>
+				<div>
+
+				<footer id="footer" style="padding: 2em 0 0.5em 0;">
+					<ul class="copyright">
+						<li>&copy; Condos Cité Avenir Laval</li>
+						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li><a href="en-contact.html" style="font-size: 3em; padding-left: 9px;" class="icon fa-envelope-o"><span class="label">Email</span></a>
+						<a href="http://facebook.com" style="font-size: 2.6em; padding-left: 7px;" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+					</ul>
+				</footer>
 			</div>
 
 		<!-- Scripts -->
