@@ -30,6 +30,10 @@
 			.displaySmall {
 				display: block !important;
 			}
+
+			#disappear {
+				display: none;
+			}
 		}
 	</style>
 	<head>
@@ -75,7 +79,7 @@
 					</header>
 
 				<!-- Main -->
-					<article id="main">
+					<article id="main" style="overflow-x: hidden;">
 						<header style="background-attachment: scroll;">
 							<h2>Neighborhood</h2>
 						</header>
@@ -83,6 +87,13 @@
 							<div class="inner">
 								<p>Condos Cité Avenir Laval is in the heart of all the attractions of Downtown Laval. Enjoy urban living with the tranquility of your own residential neighborhood.</p>
 								<p>Condos Cité Avenir is nearby to all your needs; whether it be for work, leisure, transit, entertainment, nightlife, schools, shopping.</p>
+								
+								<a href="images/planDeQuartier.png">
+									<img class="map" style="display: block; margin-left: auto; margin-right: auto; max-width: 1000px; width: 95%; height: auto;" src="images/planDeQuartier.png">
+								</a>
+
+								<br/>
+
 								<div class="table-wrapper">
 									<table style="margin-top: 20px;">
 										<tbody>
@@ -110,21 +121,36 @@
 									</table>
 								</div>
 
-								<a href="images/planDeQuartier.png">
-									<img class="map" style="display: block; margin-left: auto; margin-right: auto; max-width: 1000px; width: 95%; height: auto;" src="images/planDeQuartier.png">
-								</a>
+								<section id="disappear" class="wrapper style3 special">
+									<div class="inner">
+										<ul class="features">
+											<li style="overflow:hidden; max-height: 250px; max-width: 325px; padding-right: 5px;">
+												<center><img style="max-height: 250px; width: auto; border-top-left-radius: 5px; border-bottom-left-radius: 5px;" src="images/NEIGHBORHOOD centropolis.jpg" alt="" /></center>
+											</li>
+											<li style="overflow:hidden; max-height: 250px; max-width: 325px; padding-left: 5px;">
+												<center><img style="max-height: 250px; width: auto; border-top-right-radius: 5px; border-bottom-right-radius: 5px;" src="images/NEIGHBORHOOD montmorency.jpg" alt="" /></center>
+											</li>
+										</ul>
+										<ul class="features">
+											<li style="overflow:hidden; max-height: 250px; max-width: 325px; padding-right: 5px;">
+												<center><img style="max-height: 250px; width: auto; border-top-left-radius: 5px; border-bottom-left-radius: 5px;" src="images/NEIGHBORHOOD place bell.jpg" alt="" /></center>
+											</li>
+											<li style="overflow:hidden; max-height: 250px; max-width: 325px; padding-left: 5px;">
+												<center><img style="max-height: 250px; width: auto border-top-right-radius: 5px; border-bottom-right-radius: 5px;" src="images/NEIGHBORHOOD salle andre mathieu.jpg" alt="" /></center>
+											</li>
+										</ul>
+									</div>
+								</section>
 
-								<hr>
-								<p></p>
 								<p>Take advandage of La Ligne 360! The free public transit service that circle’s around the Laval downtown area. Condos Cité Avenir is just steps from the Du Souvenir / De L’avenir bus stop.</p>
-								<a href="http://ligne360.com" style="width: 350px; margin-left: auto; margin-right: auto; margin-bottom: 0px; margin-top: 25px;" class="button fit special">www.ligne360.com</a>
+								<a href="http://ligne360.com" style="max-width: 350px; margin-left: auto; margin-right: auto; margin-bottom: 20px; margin-top: 25px;" class="button fit special">www.ligne360.com</a>
 
 							</div>
 						</section>
 
-						<a href="images/ligne360.jpg">
+						<div style="background-color: #FFF">
 							<img class="map" style="display: block; margin-left: auto; margin-right: auto; max-width: 1000px; height: auto;" src="images/ligne360.jpg">
-						</a>
+						</div>
 
 					</article>
 
