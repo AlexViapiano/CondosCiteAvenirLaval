@@ -1,0 +1,136 @@
+<!DOCTYPE html> 
+<html>
+
+<style>    
+    @media screen and (max-width: 650px) {
+        .displayBig {
+            display: none;
+        }
+
+        .displaySmall {
+            display: block !important;
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        .logoSmall {
+            margin-top: 6px !important;
+        }
+    }
+</style>
+<head>
+    <title>Condos Cité Avenir Laval</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" href="images/logo-small.png">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="maphilight-master/jquery.maphilight.js"></script>
+    <script type="text/javascript">$(function() {
+        $('.map').maphilight();
+        $('#squidheadlink').mouseover(function(e) {
+            $('#squidhead').mouseover();
+        }).mouseout(function(e) {
+            $('#squidhead').mouseout();
+        }).click(function(e) { e.preventDefault(); });
+    });</script>
+</head>
+<body style="overflow-x: hidden;">
+
+<div id="page-wrapper">
+
+    <header id="header">
+        <img class="logoSmall" style="height: 40px; max-width: 40px; margin-left:  0.75em; margin-top: 3px;" src="images/logo-small.png">
+        <h1 style="padding-left: 45px;"><a href="index.html">Condos Cité-Avenir-Laval</a></h1>
+        <nav id="nav">
+            <ul>
+                <li>
+                        <div class="displayBig"><a href="en-index.html"><span>English</span></a></div>
+                </li>
+                <li class="special">
+                    <a href="#menu" class="menuToggle"><span>Menu</span></a>
+                    <div id="menu">
+                            <ul>
+                                    <li><a href="index.html">Acceuil</a></li>
+                                    <li><a href="project.html">Projet</a></li>
+                                    <li><a href="neighborhood.html">Quartier</a></li>
+                                    <li><a href="plans.html">Plans</a></li>
+                                    <li><a href="builder.html">Constructeur</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li class="displaySmall" style="display: none;"><a href="en-index.html"><span>English</span></a></li>
+                                </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <article id="main">
+        <header style="background-attachment: scroll;">
+            <!-- <h2>Level 3</h2> -->
+        </header>
+        <section class="wrapper style5" style="padding: 2em 0 2em 0;">
+
+            <div class="displayBig">
+                <center>
+                    <img class="map" style="width: 835px; height: 645px;" src="plans/PLAN ETAGE 3-1.png" usemap="#image-map">
+
+                    <map name="image-map">
+                        <area target="_self" alt="Unit 301" title="Unit 301" href="en-unit301.html" coords="102,413,169,431,170,414,294,416,296,397,322,398,322,332,395,332,397,238,102,238" shape="poly">
+                        <area target="_self" alt="Unit 302" title="Unit 302" href="en-unit302.html" coords="102,237,103,63,396,62,395,236" shape="poly">
+                        <area target="_self" alt="Unit 303" title="Unit 303" href="en-unit303.html" coords="456,62,457,176,438,176,439,255,485,255,485,266,521,266,522,200,564,200,565,214,701,217,701,64" shape="poly">
+                        <area target="_self" alt="Unit 304" title="Unit 304" href="en-unit304.html" coords="435,321,508,321,507,329,542,330,543,371,623,371,625,393,701,394,700,216,564,216,564,199,521,199,521,265,485,264,484,255,440,256,438,288,434,289" shape="poly">
+                        <area target="_self" alt="Unit 305" title="Unit 305" href="en-unit305.html" coords="406,489,478,490,480,509,627,547,628,485,700,484,700,394,624,392,622,372,543,371,540,330,508,329,507,322,457,321,457,370,482,371,481,397,408,398" shape="poly">
+                    </map>
+                </center>
+            </div>
+
+            <div class="displaySmall" style="display: none;">
+                <div class="table-wrapper">
+                    <center>
+                    <table style="max-width: 600px;">
+                        <tbody>
+                            <tr>
+                                <td style="text-align: center;"><a href="en-unit301.html">Unité 301</a></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;"><a href="en-unit302.html">Unité 302</a></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;"><a href="en-unit303.html">Unité 303</a></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;"><a href="en-unit304.html">Unité 304</a></td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;"><a href="en-unit305.html">Unité 305</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </center>
+                </div>
+            </div>
+            
+        </section>
+    </article>
+
+    <footer id="footer" style="padding: 2em 0 0.5em 0;">
+        <ul class="copyright">
+            <li>&copy; Condos Cité Avenir Laval</li>
+            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            <li><a href="contact.html" style="font-size: 3em; padding-left: 9px;" class="icon fa-envelope-o"><span class="label">Email</span></a>
+            <a href="http://facebook.com" style="font-size: 2.6em; padding-left: 7px;" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+        </ul>
+    </footer>
+
+</div>
+
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

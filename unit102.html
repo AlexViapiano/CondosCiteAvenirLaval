@@ -1,6 +1,24 @@
 <!DOCTYPE html> 
 <html>
 
+<style>
+    @media screen and (max-width: 480px) {
+    .displayBig {
+        display: none;
+    }
+
+    .displaySmall {
+        display: block !important;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .logoSmall {
+        margin-top: 6px !important;
+    }
+}
+</style>
+
 <head>
     <title>Condos Cité Avenir Laval</title>
     <meta charset="utf-8" />
@@ -14,25 +32,25 @@
 <div id="page-wrapper">
 
     <header id="header">
-        <img style="height: 40px; max-width: 40px; margin-left:  0.75em; margin-top: 3px;" src="images/logo-small.png">
-        <h1 style="padding-left: 45px;"><a href="index.html">Condos Cité Avenir Laval</a></h1>
+        <img class="logoSmall" style="height: 40px; max-width: 40px; margin-left:  0.75em; margin-top: 3px;" src="images/logo-small.png">
+        <h1 style="padding-left: 45px;"><a href="index.html">Condos Cité-Avenir-Laval</a></h1>
         <nav id="nav">
             <ul>
                 <li>
-                    <div class="displayBig"><a href="index.html"><span>Français</span></a></div>
+                        <div class="displayBig"><a href="en-index.html"><span>English</span></a></div>
                 </li>
                 <li class="special">
                     <a href="#menu" class="menuToggle"><span>Menu</span></a>
                     <div id="menu">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="en-project.html">Project</a></li>
-                            <li><a href="en-neighborhood.html">Neighborhood</a></li>
-                            <li><a href="en-plans.html">Plans</a></li>
-                            <li><a href="en-builder.html">Builder</a></li>
-                            <li><a href="en-contact.html">Contact</a></li>
-                            <li class="displaySmall" style="display: none;"><a href="index.html"><span>Français</span></a></li>
-                        </ul>
+                            <ul>
+                                    <li><a href="index.html">Acceuil</a></li>
+                                    <li><a href="project.html">Projet</a></li>
+                                    <li><a href="neighborhood.html">Quartier</a></li>
+                                    <li><a href="plans.html">Plans</a></li>
+                                    <li><a href="builder.html">Constructeur</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li class="displaySmall" style="display: none;"><a href="en-index.html"><span>English</span></a></li>
+                                </ul>
                     </div>
                 </li>
             </ul>
@@ -40,10 +58,12 @@
     </header>
 
     <article id="main">
-        <header style="background-attachment: scroll;"></header>
+        <header style="background-attachment: scroll;">
+
+        </header>
         <section class="wrapper style5" style="padding: 2em 0 2em 0;">
-            <a href="images/101-1.png">
-            <img class="map" style="display: block; margin-left: auto; margin-right: auto; max-width: 835px; width: 95%; height: auto;" src="images/102-1.png">
+            <a href="plans/102-1.png">
+            <img class="map" style="display: block; margin-left: auto; margin-right: auto; max-width: 835px; width: 95%; height: auto;" src="plans/102-1.png">
             </a>
         </section>
     </article>
@@ -52,7 +72,7 @@
         <ul class="copyright">
             <li>&copy; Condos Cité Avenir Laval</li>
             <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-            <li><a href="en-contact.html" style="font-size: 3em; padding-left: 9px;" class="icon fa-envelope-o"><span class="label">Email</span></a>
+            <li><a href="contact.html" style="font-size: 3em; padding-left: 9px;" class="icon fa-envelope-o"><span class="label">Email</span></a>
             <a href="http://facebook.com" style="font-size: 2.6em; padding-left: 7px;" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
         </ul>
     </footer>

@@ -7,10 +7,10 @@
 <html>
 	<style>
 		#main > header {
-			background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/banner2cropped.jpg") !important;
-			background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/banner2cropped.jpg") !important;
-			background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/banner2cropped.jpg") !important;
-			background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/banner2cropped.jpg") !important;
+			background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/bannerProject.jpg") !important;
+			background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/bannerProject.jpg") !important;
+			background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/bannerProject.jpg") !important;
+			background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/bannerProject.jpg") !important;
 		}
 
 		@media screen and (max-width: 480px) {
@@ -20,6 +20,16 @@
 	
 			.displaySmall {
 				display: block !important;
+			}
+
+			#disappear {
+				display: none;
+			}
+		}
+
+		@media screen and (min-width: 1280px) {
+			.logoSmall {
+				margin-top: 6px !important;
 			}
 		}
 	</style>
@@ -40,8 +50,8 @@
 
 				<!-- Header -->
 					<header id="header">
-						<img style="height: 40px; max-width: 40px; margin-left: 0.75em; margin-top: 3px;" src="images/logo-small.png">
-						<h1 style="padding-left: 45px;"><a href="index.html">Condos Cité Avenir Laval</a></h1>
+						<img class="logoSmall" style="height: 40px; max-width: 40px; margin-left: 0.75em; margin-top: 3px;" src="images/logo-small.png">
+						<h1 style="padding-left: 45px;"><a href="en-index.html">Condos Cité-Avenir-Laval</a></h1>
 						<nav id="nav">
 							<ul>
 								<li>
@@ -51,7 +61,7 @@
 									<a href="#menu" class="menuToggle"><span>Menu</span></a>
 									<div id="menu">
 										<ul>
-											<li><a href="index.html">Home</a></li>
+											<li><a href="en-index.html">Home</a></li>
 											<li><a href="en-project.html">Project</a></li>
 											<li><a href="en-neighborhood.html">Neighborhood</a></li>
 											<li><a href="en-plans.html">Plans</a></li>
@@ -76,13 +86,17 @@
 
 								<div class="table-wrapper">
 									<center>
+										
+									<!-- Charactertics du project -->
+									<u><h2 style="padding-bottom: 15px;">Project Features</h2></u>
+
 									<table style="max-width: 600px;">
 										<tbody>
 											<tr>
 												<td>Exceptional location in the heart of Downtown Laval</td>
 											</tr>
 											<tr>
-												<td>5 storey building</td>
+												<td>4 storey building</td>
 											</tr>
 											<tr>
 												<td>Modern Design and Architecture</td>
@@ -112,7 +126,7 @@
 												<td>Interphone system</td>
 											</tr>
 											<tr>
-												<td>Bicycle racks</td>
+												<td>Interior and exterior bicycle racks</td>
 											</tr>
 											<tr>
 												<td>Tire storage room in basement</td>
@@ -127,14 +141,33 @@
 									</table>
 								</center>
 								</div>
-
 								<center><p>**conditions may apply**</p></center>
-								<p></p>
-								<p></p>
-								<center><h4 style="margin-top: 50px">Download complete list of features</h4></center>
-								<center><a href="other/SPECIFICATIONS.docx" download style="margin-bottom: 40px; margin-top: 10px;" class="button special icon fa-download">Project Specifications</a><center>
-							</div>
-						</section>
+
+								<center><a href="other/SPECIFICATIONS.pdf" download style="margin-bottom: 40px; margin-top: 10px;" class="button special icon fa-download">Download complete list of features</a><center>
+
+								<hr>
+
+								<!-- Vue en exterior -->
+								<u><h2 style="padding-bottom: 15px;">Exterior Plan View</h2></u>
+
+								<a href="images/plansLandscape.png">
+									<img class="map" style="display: block; margin-left: auto; margin-right: auto; max-width: 1000px; width: 95%; height: auto;" src="images/plansLandscape.png">
+								</a>
+
+								<section id="disappear" class="wrapper style3 special">
+									<!-- <div class="inner">
+										<ul class="features">
+											<li style="overflow:hidden; max-height: 250px; max-width: 325px; padding-right: 5px;">
+												<center><img style="max-height: 250px; width: auto; border-top-left-radius: 5px; border-bottom-left-radius: 5px;" src="images/PROJECT BAKERY.jpg" alt="" /></center>
+											</li>
+											<li style="overflow:hidden; max-height: 250px; max-width: 325px; padding-left: 5px;">
+												<center><img style="max-height: 250px; width: auto; border-top-right-radius: 5px; border-bottom-right-radius: 5px;" src="images/PROJECT DINNER CELEBRATION.jpg" alt="" /></center>
+											</li>
+										</ul>
+									</div> -->
+
+								</div>
+							</section>
 					</article>
 
 				<!-- Footer -->
